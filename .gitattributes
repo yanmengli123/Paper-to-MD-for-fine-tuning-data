@@ -1,0 +1,17 @@
+# 统一换行符，避免 Windows CRLF / Linux LF 反复污染 diff
+* text=auto eol=lf
+
+# 二进制文件不做换行转换
+*.pdf binary
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.gif binary
+*.zip binary
+
+# Python 明确按 LF 存储
+*.py text eol=lf
+*.md text eol=lf
+*.json text eol=lf
+*.jsonl text eol=lf
+*.txt text eol=lf

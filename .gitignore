@@ -1,0 +1,48 @@
+# ===== 机密信息：绝不提交 =====
+.env
+.env.local
+*.pem
+*.key
+secrets/
+
+# ===== Python 缓存 / 虚拟环境 =====
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+.venv/
+venv/
+env/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+*.egg-info/
+dist/
+build/
+
+# ===== 运行时状态与日志（含 MinerU 预签名 URL 等敏感信息） =====
+output/state.json
+*.log
+logs/
+
+# ===== 编辑器 / 操作系统 =====
+.vscode/
+.idea/
+*.swp
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# ===== 源 PDF：默认不入库 =====
+# 已出版论文 PDF 通常不允许再分发, 且体积较大(~24MB)。
+# 如需完整复现, 请自行放置 PDF 后使用:
+#   git add -f "Review on Rice Endosperm"     # 强制纳入
+*.pdf
+
+# ===== 模型与数据缓存 =====
+.cache/
+*.tmp
+*.bak

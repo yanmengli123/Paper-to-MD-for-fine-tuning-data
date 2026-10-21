@@ -1,0 +1,12 @@
+# 运行环境
+# Python 3.13.3 (Windows / Linux 通用)
+#   python -m venv .venv
+#   .venv\Scripts\activate      # Windows
+#   source .venv/bin/activate   # Linux/macOS
+#   pip install -r requirements.txt
+#   copy .env.example .env      # Windows (Linux: cp .env.example .env)
+#   # 填入 MINERU_API_KEY 与 LLM_API_KEY
+#   python build_sft_pipeline.py
+
+requests==2.34.2
+tqdm==4.70.1
